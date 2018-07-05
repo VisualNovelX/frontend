@@ -13,8 +13,9 @@ export class PostComponent implements OnInit {
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
-    this.sub = this.route.params.subscribe(params => {
-      this.title = params['title'];
-    });
+    this.sub = this.route.paramMap
+      .subscribe(param => {
+        this.title = param.get('title');
+      });
   }
 }
