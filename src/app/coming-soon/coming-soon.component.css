@@ -1,0 +1,22 @@
+section {
+  display: grid;
+  grid-template:
+    "title"
+    "buttons";
+}
+
+.instagram {
+  background: #dd2a7b;
+}
+
+.facebook {
+  background: #3b5a99;
+}
+
+.twitter {
+  background: #25a8e0;
+}
+
+.icon.is-large {
+  font-size: 1.25em;
+}

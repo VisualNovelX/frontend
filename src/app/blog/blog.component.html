@@ -1,0 +1,4 @@
+<section class="section">
+  <vnx-post-preview *ngFor="let post of posts" [post]="post"></vnx-post-preview>
+  <vnx-sidebar [ngStyle]="{'grid-row': '1/' + posts.length}"></vnx-sidebar>
+</section>
