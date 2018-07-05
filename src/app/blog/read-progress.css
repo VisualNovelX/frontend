@@ -1,0 +1,16 @@
+progress {
+  width: 100vw;
+  height: 10px;
+  border-radius: 0;
+  top: 0;
+  position: fixed;
+}
+
+/* Might not need these below, these are default bulma colors */
+progress::-webkit-progress-value {
+  background: hsl(0, 0%, 29%);
+}
+
+progress::-webkit-progress-bar {
+  background: hsl(0, 0%, 86%);
+}
