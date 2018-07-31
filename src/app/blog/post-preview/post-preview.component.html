@@ -1,25 +1,6 @@
-<!--<div class="content">-->
-<!--&lt;!&ndash; Get art from pixiv & link artist &ndash;&gt;-->
-<!--<vnx-post-image></vnx-post-image>-->
-<!--<div class="columns">-->
-<!--<div class="column">-->
-<!--<vnx-post-categories></vnx-post-categories>-->
-<!--<vnx-post-title></vnx-post-title>-->
-<!--</div>-->
-<!--<div class="column">-->
-<!--<vnx-post-share></vnx-post-share>-->
-<!--&lt;!&ndash; Date and estimated read time &ndash;&gt;-->
-<!--<vnx-post-info></vnx-post-info>-->
-<!--<vnx-post-short></vnx-post-short>-->
-<!--<vnx-read-more></vnx-read-more>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-
 <div class="card">
   <div class="card-image">
     <figure class="image is-16by9">
-      {{post.image.url}}
       <img [src]="post.image.url" [title]="post.image.title">
     </figure>
   </div>
@@ -46,23 +27,7 @@
       </div>
       <div class="column">
         <div class="content">
-          <p class="buttons">
-            <a class="button is-link is-medium facebook">
-              <span class="icon is-large">
-                <i class="fab fa-facebook-f"></i>
-              </span>
-            </a>
-            <a class="button is-link is-medium twitter">
-              <span class="icon is-large">
-                <i class="fab fa-twitter"></i>
-              </span>
-            </a>
-            <a class="button is-link is-medium instagram">
-              <span class="icon is-large">
-                <i class="fab fa-instagram"></i>
-              </span>
-            </a>
-          </p>
+          <vnx-post-share></vnx-post-share>
         </div>
         <div class="content is-medium">
           <div class="notification line-clamp" ellipsis>
@@ -71,11 +36,10 @@
         </div>
         <div class="content is-medium">
           <div class="read-more is-pulled-left">
-            <p><a class="readmore" routerLink="['/blog', title]">Read More...</a></p>
+            <p><a class="readmore" [routerLink]="['/blog', post.title]">Read More...</a></p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
