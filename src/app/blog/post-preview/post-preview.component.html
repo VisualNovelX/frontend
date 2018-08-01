@@ -1,7 +1,7 @@
 <div class="card">
   <div class="card-image">
     <figure class="image is-16by9">
-      <img [src]="post.image.url" [title]="post.image.title">
+      <img class="pointer" [src]="post.image.url" [title]="post.image.title" [routerLink]="['/blog', post.title]">
     </figure>
   </div>
   <div class="card-content">
@@ -11,7 +11,7 @@
           <a class="is-size-3" href="#">#{{post.categories[0]}}</a>
         </div>
         <div class="content">
-          <span class="title">{{post.title}}</span>
+          <span class="title pointer" [routerLink]="['/blog', post.title]">{{post.title}}</span>
           <hr>
         </div>
         <div class="content">
