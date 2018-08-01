@@ -1,3 +1,7 @@
-<section class="section">
-  <h1 class="title">{{title}}</h1>
+<section class="section" [ngStyle]="{'background-image': 'url(' + post.image.url + ')'}">
+  <div class="content" style="margin: 0 auto; margin-top: 33vw; padding: 25px; width: 80vw; background: white;">
+
+    <h1 class="title">{{post.title}}</h1>
+    <hr>
+  </div>
 </section>
