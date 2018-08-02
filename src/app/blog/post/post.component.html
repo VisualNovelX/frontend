@@ -1,7 +1,14 @@
 <section class="section" [ngStyle]="{'background-image': 'url(' + post.image.url + ')'}">
-  <div class="content" style="margin: 0 auto; margin-top: 33vw; padding: 25px; width: 80vw; background: white;">
-
-    <h1 class="title">{{post.title}}</h1>
-    <hr>
+  <div class="content">
+    <div class="post">
+      <h1 class="title has-text-weight-bold">{{post.title}}</h1>
+      <hr class="has-background-grey-darker">
+      <div>Put author, artist, publish date, and read time here~</div>
+      <p class="is-size-4 has-text-weight-semibold">{{post.content}}</p>
+      <p class="is-size-4 has-text-weight-semibold">{{post.content}}</p>
+      <p class="is-size-4 has-text-weight-semibold">{{post.content}}</p>
+      <p class="is-size-4 has-text-weight-semibold">{{post.content}}</p>
+    </div>
+    <vnx-sidebar></vnx-sidebar>
   </div>
 </section>

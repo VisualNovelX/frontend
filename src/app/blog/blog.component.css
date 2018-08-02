@@ -1,6 +1,6 @@
 .section {
   display: grid;
-  grid-gap: 50px;
+  grid-gap: 40px;
   grid-template-columns: [post-preview] 2fr [sidebar] 1fr;
   padding: 3rem;
   margin: 0 auto;
@@ -9,11 +9,9 @@
 
 vnx-preview-post {
   grid-area: preview-post;
-  grid-column: 1/3;
   grid-row: 1/1;
 }
 
 vnx-sidebar {
   grid-area: sidebar;
-  grid-column: 2/3;
 }
