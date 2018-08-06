@@ -22,3 +22,31 @@ vnx-sidebar {
   padding-right: 2em;
   grid-area: sidebar;
 }
+
+.author-image {
+  max-width: 175px;
+}
+
+.author-info, .artist-info {
+  font-size: 1.5rem;
+}
+
+.author-info p {
+  margin: 0;
+}
+
+.author-info p a span {
+  align-self: center;
+  color: #25a8e0;
+  padding: 1rem;
+  vertical-align: middle;
+}
+
+.post-info {
+  max-width: 275px;
+}
+
+vnx-post-time {
+  display: block;
+  padding-top: 1rem;
+}

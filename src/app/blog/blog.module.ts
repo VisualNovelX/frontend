@@ -9,6 +9,7 @@ import { PostPreviewComponent } from './post-preview/post-preview.component';
 import { PostShareComponent } from './post-share/post-share.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { PostComponent } from './post/post.component';
+import { PostTimeComponent } from './post-time/post-time.component';
 
 @NgModule({
   imports: [
@@ -22,7 +23,8 @@ import { PostComponent } from './post/post.component';
     PostPreviewComponent,
     PostShareComponent,
     SidebarComponent,
-    PostComponent
+    PostComponent,
+    PostTimeComponent
   ],
   exports: [
     BlogComponent,

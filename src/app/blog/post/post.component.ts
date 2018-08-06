@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
 
@@ -32,10 +32,11 @@ export class PostComponent implements OnInit {
           "categories": ["vnxspotlight"],
           "title": "A young mystery impossible to read ahead, drawing a girl who plunges into a \"murder plan\"!",
           "author": {
+            "name": "Sumi-chan",
+            "image": "/assets/authors/sumi.jpg",
             "email": "brian@visualnovelx.com",
-            "twitter": "https://twitter.com/jemiloii",
-            "instagram": "https://www.instagram.com/jemiloii",
-            "linkedin": "https://www.linkedin.com/in/jemiloii"
+            "twitter": "visualnovelx",
+            "instagram": "visualnovelx"
           },
           "content": "Riko Yamane, third grade junior high school student who is confined to the obsession of \"It might hurt people\". She had a trauma of \"being killed\" in front of her classmate Kanako when he was in elementary school sixth grade. Kanako's younger brother / Yujin appeared one day before Riko who managed to calm herself by spelling it on a note named \"Night's Diary\" for \"Familiar Human Murder Plan\" and Riko who was sending school life somehow. Threatened to reveal the secret of Riko related to \"death of Kanako\", Riko will help plan to kill Hideo 's father. Riko who is attracted to the honor who can share the \"night diary\" who could not tell anyone, unavoidably thinking of the murder plan. Soon they will put the murder plan into action."
         }];
@@ -43,5 +44,11 @@ export class PostComponent implements OnInit {
     ).subscribe(post => {
       this.post = post;
     });
+  }
+
+  trackScroll(p1, p2, p3) {
+    console.log('p1', p1);
+    console.log('p2', p2);
+    console.log('p3', p3);
   }
 }

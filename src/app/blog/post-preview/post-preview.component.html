@@ -12,18 +12,9 @@
         </div>
         <div class="content">
           <span class="title pointer" [routerLink]="['/blog', post.title]">{{post.title}}</span>
-          <hr>
+          <hr class="has-background-grey-darker">
         </div>
-        <div class="content">
-          <span class="icon">
-            <i class="far fa-calendar-alt"></i>
-          </span>
-          <span class="subtitle">{{post.date | date}}</span>
-          <span class="icon is-medium">
-            <i class="far fa-clock"></i>
-          </span>
-          <span class="subtitle">{{post.duration}}</span>
-        </div>
+        <vnx-post-time class="content" [date]="post.date" [duration]="post.duration"></vnx-post-time>
       </div>
       <div class="column">
         <div class="content">
