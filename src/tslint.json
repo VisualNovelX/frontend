@@ -4,13 +4,13 @@
         "directive-selector": [
             true,
             "attribute",
-            "vnx",
+            "app",
             "camelCase"
         ],
         "component-selector": [
             true,
             "element",
-            "vnx",
+            "app",
             "kebab-case"
         ]
     }
