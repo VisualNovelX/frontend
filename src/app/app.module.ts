@@ -1,7 +1,10 @@
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+
+import { ComponentsModule } from 'components/components.module'
 import { ViewsModule } from 'views/views.module';
 import { ViewsRouting } from 'views/views.routing';
 
@@ -11,9 +14,11 @@ import { ViewsRouting } from 'views/views.routing';
     AppComponent
   ],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
     ViewsRouting,
-    ViewsModule
+    ViewsModule,
+    ComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
