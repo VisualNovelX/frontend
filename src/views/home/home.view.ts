@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'home-view',
   templateUrl: './home.view.html',
-  styleUrls: ['./home.view.css']
+  styleUrls: ['./home.view.scss']
 })
 export class HomeView {
   
