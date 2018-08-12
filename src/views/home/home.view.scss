@@ -1,7 +1,8 @@
-.root {
-    color: black;
+@import 'styles/variables.scss';
 
-    & > *:first-child {
-        color: red;
-    }
+
+.product-gallery {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }

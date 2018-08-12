@@ -1,0 +1,71 @@
+@import 'styles/variables.scss';
+
+.root {
+    padding: 0;
+}
+
+.image {
+    position: relative;
+    img {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.social-icons {
+    display: flex;
+    position: absolute;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+    color: $dark-gray;
+    z-index: $z-index-positive;
+
+    & > * {
+        font-size: $font-size-sm;
+        padding-top: 12px;
+        cursor: pointer;
+    }
+
+    & > *:last-child {
+        padding-right: 12px;
+    }
+
+    & > *:not(:last-child) {
+        margin-right: 0.5rem;
+    }
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    color: $dark-gray;
+
+    & button {
+        background-color: $red;
+    }
+
+    & > *:not(:last-child) {
+        margin-top: $gap-sm;
+    }
+
+    a {
+        color: $dark-gray;
+        margin-bottom: 0.4rem;
+    }
+
+    button {
+        color: $white;
+    }
+}
+
+.title {
+    font-size: $font-size-sm;
+}
+
+.price {
+    font-size: $font-size-sm;
+}

@@ -37,11 +37,15 @@ import {
   MatTreeModule,
 } from '@angular/material';
 import { HeaderComponent } from './header/header.component';
+import { ProductCardComponent } from './product-card/product-card.component';
+import { ContainerComponent } from 'components/container/container.component';
 
 
 @NgModule({
   declarations:[
     HeaderComponent,
+    ProductCardComponent,
+    ContainerComponent,
   ],
   imports: [
     MatAutocompleteModule,
@@ -116,7 +120,9 @@ import { HeaderComponent } from './header/header.component';
     MatToolbarModule,
     MatTooltipModule,
     MatTreeModule,
-    HeaderComponent
+    HeaderComponent,
+    ProductCardComponent,
+    ContainerComponent
   ]
 })
 export class ComponentsModule { }

@@ -1,0 +1,13 @@
+@import 'styles/variables.scss';
+
+.root {
+	display: flex;
+    flex-direction: column;
+	padding: 1.5rem;
+	margin-right: auto;
+    margin-left: auto;
+
+    & > * {
+        margin-top: $gap-md;
+    }
+}
