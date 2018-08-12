@@ -1,0 +1,11 @@
+@import 'styles/variables.scss';
+
+mat-drawer-container {
+    height: 100vh;
+    margin-bottom: 230px;
+}
+
+mat-drawer {
+    overflow-y: hidden;
+    background: $dark-blue;
+}
