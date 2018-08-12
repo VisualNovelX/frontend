@@ -1,0 +1,8 @@
+<div class="root">
+    <mat-nav-list>
+        <a *ngFor="let item of navItems" mat-list-item routerLink="{{item.path}}">
+            <i class="material-icons">{{item.icon}}</i>
+            <span>{{item.name}}</span>
+        </a>
+    </mat-nav-list>
+</div>
