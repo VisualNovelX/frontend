@@ -4,4 +4,8 @@
     background: $blue;
     color: $white;
     justify-content: space-between;
+
+    & * {
+        cursor: pointer;
+    }
 }
