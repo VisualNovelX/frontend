@@ -1,4 +1,6 @@
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 import {
   MatAutocompleteModule,
   MatBadgeModule,
@@ -38,7 +40,8 @@ import {
 } from '@angular/material';
 import { HeaderComponent } from './header/header.component';
 import { ProductCardComponent } from './product-card/product-card.component';
-import { ContainerComponent } from 'components/container/container.component';
+import { ContainerComponent } from './container/container.component';
+import { SideNavComponent } from './side-nav/side-nav.component';
 
 
 @NgModule({
@@ -46,8 +49,11 @@ import { ContainerComponent } from 'components/container/container.component';
     HeaderComponent,
     ProductCardComponent,
     ContainerComponent,
+    SideNavComponent
   ],
   imports: [
+    CommonModule,
+    RouterModule,
     MatAutocompleteModule,
     MatBadgeModule,
     MatBottomSheetModule,
@@ -122,7 +128,8 @@ import { ContainerComponent } from 'components/container/container.component';
     MatTreeModule,
     HeaderComponent,
     ProductCardComponent,
-    ContainerComponent
+    ContainerComponent,
+    SideNavComponent
   ]
 })
 export class ComponentsModule { }
