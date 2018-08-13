@@ -1,0 +1,37 @@
+.column > * {
+    margin-bottom: 1.5rem;
+}
+
+.price {
+    display: flex;
+}
+
+.price > * {
+    margin-right: 1rem;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+}
+
+.field > * {
+    margin-right: 1rem;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons > * {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.price > *:first-child {
+    text-decoration: line-through;
+}
+
+.tag i {
+    margin-left: 0.5rem;
+}

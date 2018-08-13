@@ -1,0 +1,12 @@
+.card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content > *:not(:first-child) {
+    margin-bottom: 0.5rem;
+}
+
+figure {
+    margin: 0;
+}

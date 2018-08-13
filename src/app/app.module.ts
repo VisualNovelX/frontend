@@ -8,6 +8,7 @@ import { FooterModule } from "./footer/footer.module";
 import { HeaderModule } from "./header/header.module";
 import { NavModule } from "./nav/nav.module";
 import { ComingSoonComponent } from './coming-soon/coming-soon.component';
+import { ShopModule } from './shop/shop.module';
 
 @NgModule({
   declarations: [
@@ -15,12 +16,13 @@ import { ComingSoonComponent } from './coming-soon/coming-soon.component';
     ComingSoonComponent
   ],
   imports: [
+    BrowserModule,
     AppRoutingModule,
     BlogModule,
-    BrowserModule,
     FooterModule,
     HeaderModule,
-    NavModule
+    NavModule,
+    ShopModule
   ],
   providers: [],
   bootstrap: [AppComponent]

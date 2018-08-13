@@ -13,7 +13,7 @@ import { PostShareComponent } from './post-share/post-share.component';
 import { PostInfoComponent } from './post-info/post-info.component';
 import { PostShortComponent } from './post-short/post-short.component';
 import { ReadMoreComponent } from './read-more/read-more.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
+// import { SidebarComponent } from './sidebar/sidebar.component';
 import { PostComponent } from './post/post.component';
 
 @NgModule({
@@ -33,7 +33,7 @@ import { PostComponent } from './post/post.component';
     PostInfoComponent,
     PostShortComponent,
     ReadMoreComponent,
-    SidebarComponent,
+    // SidebarComponent,
     PostComponent
   ],
   exports: [
