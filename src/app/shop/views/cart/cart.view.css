@@ -1,0 +1,46 @@
+.table {
+    width: 100%;
+}
+
+.price > * {
+    margin-bottom: 1rem;
+}
+
+.content {
+    flex-direction: column;
+    display: flex;
+}
+
+.price > *:first-child {
+    text-decoration: line-through;
+}
+
+.tag i {
+    margin-left: 0.5rem;
+}
+
+.card-content > * {
+    margin-bottom: 0.75rem;
+}
+
+.card-content .select {
+    width: 100%
+}
+
+.card-content .select select {
+    width: 100%
+}
+
+.level > *:first-child {
+    width: 60%;
+}
+
+.level > *:last-child {
+    width: 35%;
+    margin-bottom: 0.75rem;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+}

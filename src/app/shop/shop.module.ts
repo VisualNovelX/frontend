@@ -5,16 +5,18 @@ import { ProductCardComponent } from './components/product-card/product-card.com
 import { ShopService } from './services/shop.service';
 import { ShopRoutingModule } from './shop-routing.module';
 import { ProductDetailView } from './views/product-detail/product-detail.view';
+import { CartView } from './views/cart/cart.view';
 
 
 @NgModule({
   imports: [
-    CommonModule,
+  CommonModule,
     ShopRoutingModule,
   ],
   declarations: [
     ShopView,
     ProductDetailView,
+    CartView,
     ProductCardComponent,
   ],
   providers: [

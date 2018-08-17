@@ -3934,10 +3934,6 @@ ngx-ellipsis@^1.0.7:
     element-resize-detector "^1.1.14"
     tslib "^1.9.0"
 
-ngx-gallery@^5.6.1:
-  version "5.6.1"
-  resolved "https://registry.yarnpkg.com/ngx-gallery/-/ngx-gallery-5.6.1.tgz#b58c04ee08069f9f9228e544fb77cf3a774e3e44"
-
 no-case@^2.2.0:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/no-case/-/no-case-2.3.2.tgz#60b813396be39b3f1288a4c1ed5d1e7d28b464ac"
