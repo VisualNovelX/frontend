@@ -1,5 +1,6 @@
 .buttons {
   display: grid;
+  /* autoprefixer: off */
   grid-auto-columns: 1fr 1fr 1fr;
 }
 

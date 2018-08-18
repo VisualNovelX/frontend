@@ -1,8 +1,5 @@
 section {
   display: grid;
-  grid-template:
-    "title"
-    "buttons";
 }
 
 .instagram {

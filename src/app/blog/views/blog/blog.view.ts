@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'vnx-blog',
-  templateUrl: './blog.component.html',
-  styleUrls: ['./blog.component.css']
+  selector: 'blog-view',
+  templateUrl: './blog.view.html',
+  styleUrls: ['./blog.view.css']
 })
-export class BlogComponent implements OnInit {
+export class BlogView implements OnInit {
   posts;
   constructor() { }
 

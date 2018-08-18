@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ShopView } from './views/shop/shop.view';
-import { ProductCardComponent } from './components/product-card/product-card.component';
-import { ShopService } from './services/shop.service';
+
+import { ShopService } from './services';
 import { ShopRoutingModule } from './shop-routing.module';
-import { ProductDetailView } from './views/product-detail/product-detail.view';
-import { CartView } from './views/cart/cart.view';
+import { ShopView, ProductDetailView, CartView } from './views';
+import { ProductCardComponent } from './components';
+
 
 
 @NgModule({

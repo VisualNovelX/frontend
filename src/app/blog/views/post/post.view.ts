@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'vnx-post',
-  templateUrl: './post.component.html',
-  styleUrls: ['./post.component.css']
+  selector: 'post-view',
+  templateUrl: './post.view.html',
+  styleUrls: ['./post.view.css']
 })
-export class PostComponent implements OnInit {
+export class PostView implements OnInit {
   title: string;
   private sub: any;
 
