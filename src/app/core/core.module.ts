@@ -1,22 +1,10 @@
 import { NgModule } from '@angular/core';
-import { 
-    ComingSoonComponent, FooterComponent, 
-    HeaderComponent, NavComponent 
-} from './components';
-
+import { StoreModule } from '@ngrx/store';
+import { reducers, metaReducers } from './store';
 
 @NgModule({
-  declarations: [
-    ComingSoonComponent,
-    FooterComponent,
-    HeaderComponent,
-    NavComponent,
-  ],
-  exports: [
-    ComingSoonComponent,
-    FooterComponent,
-    HeaderComponent,
-    NavComponent,
-  ],
+  imports: [
+    StoreModule.forRoot(reducers, { metaReducers }),
+  ]
 })
 export class CoreModule { }

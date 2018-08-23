@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ComingSoonComponent } from './core/components';
+import { ComingSoonComponent } from './shared/components';
 
 
 const routes: Routes = [

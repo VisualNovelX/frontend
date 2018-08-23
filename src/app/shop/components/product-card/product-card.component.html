@@ -1,20 +1,20 @@
 <div class="card">
   <div class="card-image">
     <figure class="image is-4by3">
-      <img src="./assets/66772012_p0.jpg" alt="">
+      <img src="{{product.image}}" alt="">
     </figure>
   </div>
   <div class="card-content">
     <span class="title">
-      Fifth SUN Nasa Logo Adult T-Shirt
+      {{product.title}}
     </span>
     <span class="price">
-        $17.99
+        ${{product.price}}
     </span>
     <a href="">
         Add to Cart
     </a>
-    <a class="button is-primary">
+    <a class="button is-primary" routerLink="/shop/{{product.id}}">
       VIEW MORE
     </a>
   </div>
