@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {BlogComponent} from "./blog.component";
-import {PostComponent} from "./post/post.component";
+import { BlogView, PostView } from './views';
 
 const routes: Routes = [
-  { path: 'blog', component: BlogComponent },
-  { path: 'blog/:title', component: PostComponent }
+  { path: 'blog', component: BlogView },
+  { path: 'blog/:title', component: PostView }
 ];
 
 @NgModule({

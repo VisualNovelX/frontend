@@ -1,0 +1,21 @@
+<div class="card">
+  <div class="card-image">
+    <figure class="image is-4by3">
+      <img src="{{product.image}}" alt="">
+    </figure>
+  </div>
+  <div class="card-content">
+    <span class="title">
+      {{product.title}}
+    </span>
+    <span class="price">
+        ${{product.price}}
+    </span>
+    <a href="">
+        Add to Cart
+    </a>
+    <a class="button is-primary" routerLink="/shop/{{product.id}}">
+      VIEW MORE
+    </a>
+  </div>
+</div>

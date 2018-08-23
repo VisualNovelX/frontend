@@ -1,0 +1,19 @@
+* {
+  font-family: 'Fredericka the Great', cursive;
+}
+
+.hero.is-medium .hero-body {
+  padding-top: 1em;
+  margin-top: 0;
+}
+
+.brand-slogan {
+  padding-top: 8em;
+}
+
+.mascot {
+  background-size: 500px;
+  margin-top: -25px;
+  height: 500px;
+  margin-bottom: -144px;
+}

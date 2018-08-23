@@ -2,14 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EllipsisModule } from 'ngx-ellipsis';
 
-import { BlogComponent } from './blog.component';
-import { BlogHeaderComponent } from './blog-header/blog-header.component';
-import { BlogRoutingModule } from "./blog-routing.module";
-import { PostPreviewComponent } from './post-preview/post-preview.component';
-import { PostShareComponent } from './post-share/post-share.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { PostComponent } from './post/post.component';
-import { PostTimeComponent } from './post-time/post-time.component';
+import { PostService } from './services';
+import { BlogRoutingModule } from './blog-routing.module';
+import { BlogView, PostView } from './views';
+import {
+  BlogHeaderComponent, PostPreviewComponent, PostImageComponent, 
+  PostCategoriesComponent, PostTitleComponent, PostShareComponent, 
+  PostInfoComponent, PostShortComponent, ReadMoreComponent 
+} from './components';
+
 
 @NgModule({
   imports: [
@@ -18,18 +19,20 @@ import { PostTimeComponent } from './post-time/post-time.component';
     EllipsisModule
   ],
   declarations: [
-    BlogComponent,
+    BlogView,
+    PostView,
     BlogHeaderComponent,
     PostPreviewComponent,
+    PostImageComponent,
+    PostCategoriesComponent,
+    PostTitleComponent,
     PostShareComponent,
-    SidebarComponent,
-    PostComponent,
-    PostTimeComponent
+    PostInfoComponent,
+    PostShortComponent,
+    ReadMoreComponent,
   ],
-  exports: [
-    BlogComponent,
-    PostPreviewComponent,
-    BlogRoutingModule
+  providers: [
+    PostService
   ]
 })
 export class BlogModule { }
