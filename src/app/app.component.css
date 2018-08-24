@@ -2,8 +2,3 @@
   min-height: calc(100% - 168px);
   overflow: auto;
 }
-
-.container {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
