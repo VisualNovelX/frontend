@@ -1,6 +1,8 @@
-<div class="product-gallery">
-  <product-card-component 
-    *ngFor="let product of products$ | async" 
-    [product]="product">
-  </product-card-component>
-</div>
+<section class="section container">
+  <div class="product-gallery">
+    <product-card-component
+      *ngFor="let product of products$ | async"
+      [product]="product">
+    </product-card-component>
+  </div>
+</section>
