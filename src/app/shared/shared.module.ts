@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
-import { 
-    ComingSoonComponent, FooterComponent, 
-    HeaderComponent, NavComponent 
+import { RouterModule } from '@angular/router';
+import {
+    ComingSoonComponent, FooterComponent,
+    HeaderComponent, NavComponent
 } from './components';
 
 
 @NgModule({
+  imports: [
+    RouterModule
+  ],
   declarations: [
     ComingSoonComponent,
     FooterComponent,

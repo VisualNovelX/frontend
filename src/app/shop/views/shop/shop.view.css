@@ -4,3 +4,8 @@
   /* autoprefixer: off */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
+.container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}

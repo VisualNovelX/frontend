@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PostShortComponent } from './post-short.component';
+import { PostTimeComponent } from './post-time.component';
 
-describe('PostShortComponent', () => {
-  let component: PostShortComponent;
-  let fixture: ComponentFixture<PostShortComponent>;
+describe('PostTimeComponent', () => {
+  let component: PostTimeComponent;
+  let fixture: ComponentFixture<PostTimeComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PostShortComponent ]
+      declarations: [ PostTimeComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PostShortComponent);
+    fixture = TestBed.createComponent(PostTimeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

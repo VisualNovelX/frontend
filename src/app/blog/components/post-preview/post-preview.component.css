@@ -1,11 +1,5 @@
-.buttons {
-  display: grid;
-  /* autoprefixer: off */
-  grid-auto-columns: 1fr 1fr 1fr;
-}
-
-.button {
-  grid-row: 1;
+figure.image {
+  margin: 0;
 }
 
 .notification {
@@ -13,22 +7,10 @@
   overflow: hidden;
 }
 
-.instagram {
-  background: #dd2a7b;
-}
-
-.facebook {
-  background: #3b5a99;
-}
-
-.twitter {
-  background: #25a8e0;
-}
-
-.icon.is-large {
-  font-size: 1.25em;
-}
-
-.readmore {
+.read-more {
   font-size: 1.1em;
+}
+
+.pointer:hover {
+  cursor: pointer;
 }

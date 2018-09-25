@@ -1,3 +1,45 @@
-<p>
-  post title is {{title}}
-</p>
+<section class="section" (scroll)="trackScroll" [ngStyle]="{'background-image': 'url(' + post.image.url + ')'}">
+  <div class="content">
+    <div class="post">
+      <h1 class="title has-text-weight-bold">{{post.title}}</h1>
+      <hr class="has-background-grey-darker">
+      <div class="columns">
+        <div class="column author-image">
+          <img [src]="post.author.image">
+        </div>
+        <div class="column author-info">
+          <p>by {{post.author.name}}</p>
+          <p>
+            <a *ngIf="post.author.twitter" [href]="'https://twitter.com/' + post.author.twitter">
+              <span class="icon">
+                <i class="fab fa-twitter"></i>
+              </span>
+              <span>{{post.author.twitter}}</span>
+            </a>
+          </p>
+          <p>
+            <a *ngIf="post.author.instagram" [href]="'https://instragram.com/' + post.author.instagram">
+              <span class="icon">
+                <i class="fab fa-instagram"></i>
+              </span>
+              <span>{{post.author.instagram}}</span>
+            </a>
+          </p>
+          <p class="artist-info">Art by: <a [href]="post.image.pixiv">{{post.image.artist}}</a></p>
+        </div>
+        <div class="column post-info">
+          <vnx-post-share></vnx-post-share>
+          <vnx-post-time [date]="post.date" [duration]="post.duration"></vnx-post-time>
+        </div>
+      </div>
+      <div>Put author, artist, publish date, and read time here~</div>
+      <article>
+        <p class="is-size-4 has-text-weight-semibold">{{post.content}}</p>
+        <p class="is-size-4 has-text-weight-semibold">{{post.content}}</p>
+        <p class="is-size-4 has-text-weight-semibold">{{post.content}}</p>
+        <p class="is-size-4 has-text-weight-semibold">{{post.content}}</p>
+      </article>
+    </div>
+    <vnx-sidebar></vnx-sidebar>
+  </div>
+</section>

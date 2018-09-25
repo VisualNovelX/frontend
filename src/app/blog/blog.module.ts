@@ -6,9 +6,7 @@ import { PostService } from './services';
 import { BlogRoutingModule } from './blog-routing.module';
 import { BlogView, PostView } from './views';
 import {
-  BlogHeaderComponent, PostPreviewComponent, PostImageComponent, 
-  PostCategoriesComponent, PostTitleComponent, PostShareComponent, 
-  PostInfoComponent, PostShortComponent, ReadMoreComponent 
+  BlogHeaderComponent, PostPreviewComponent, PostShareComponent, PostTimeComponent, SidebarComponent
 } from './components';
 
 
@@ -23,13 +21,9 @@ import {
     PostView,
     BlogHeaderComponent,
     PostPreviewComponent,
-    PostImageComponent,
-    PostCategoriesComponent,
-    PostTitleComponent,
     PostShareComponent,
-    PostInfoComponent,
-    PostShortComponent,
-    ReadMoreComponent,
+    PostTimeComponent,
+    SidebarComponent
   ],
   providers: [
     PostService

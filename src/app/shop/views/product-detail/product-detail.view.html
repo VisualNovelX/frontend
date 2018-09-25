@@ -1,67 +1,69 @@
-<div class="columns is-desktop">
-  <div class="column">
-    <figure class="image is-4by3">
+<section class="section container">
+  <div class="columns is-desktop">
+    <div class="column">
+      <figure class="image is-4by3">
         <img src="{{product.image}}" alt="">
-    </figure>
+      </figure>
+    </div>
+    <div class="column">
+      <div class="title">
+        {{product.title}}
+      </div>
+      <div class="price">
+        <div>${{product.price}}</div>
+        <div *ngIf="product.discount !== 0" class="tag">$12.99 <i>Save 15%</i></div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="field">
+            <span>Size:</span>
+            <div class="control">
+              <div class="select">
+                <select>
+                  <option>Select Size</option>
+                  <option *ngFor="let size of product.sizes">{{size}}</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <span>Color:</span>
+            <div class="control">
+              <div class="select">
+                <select>
+                  <option>Select Color</option>
+                  <option *ngFor="let color of product.colors">{{color}}</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <span>Quantity:</span>
+            <div class="control">
+              <div class="select">
+                <select>
+                  <option>Select dropdown</option>
+                  <option>With options</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <a class="button is-success">Buy Now</a>
+        <a class="button is-info">Add to Cart</a>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-header-title">
+            {{product.title}}
+          </div>
+        </div>
+        <div class="card-content">
+          {{product.description}}
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="column">
-    <div class="title">
-      {{product.title}}
-    </div>
-    <div class="price">
-      <div>${{product.price}}</div>
-      <div *ngIf="product.discount !== 0" class="tag">$12.99 <i>Save 15%</i></div>
-    </div>
-    <div class="card">
-      <div class="card-content">
-        <div class="field">
-          <span>Size:</span>
-          <div class="control">
-            <div class="select">
-              <select>
-                <option>Select Size</option>
-                <option *ngFor="let size of product.sizes">{{size}}</option>
-              </select>
-            </div>
-          </div>
-        </div>
-        <div class="field">
-          <span>Color:</span>
-          <div class="control">
-            <div class="select">
-              <select>
-                <option>Select Color</option>
-                <option *ngFor="let color of product.colors">{{color}}</option>
-              </select>
-            </div>
-          </div>
-        </div>
-        <div class="field">
-          <span>Quantity:</span>
-          <div class="control">
-            <div class="select">
-              <select>
-                <option>Select dropdown</option>
-                <option>With options</option>
-              </select>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="buttons">
-      <a class="button is-success">Buy Now</a>
-      <a class="button is-info">Add to Cart</a>
-    </div>
-    <div class="card">
-      <div class="card-header">
-        <div class="card-header-title">
-          {{product.title}}
-        </div>
-      </div>
-      <div class="card-content">
-        {{product.description}}
-      </div>
-    </div>
-  </div>
-</div>
+</section>

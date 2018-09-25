@@ -1,4 +1,4 @@
-.container {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.content {
+  min-height: calc(100% - 168px);
+  overflow: auto;
 }
